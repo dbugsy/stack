@@ -1,0 +1,15 @@
+{
+  "name": "stack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:dbugsy/stack.git",
+  "author": "dbugsy <dpbergquist@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "jasmine": "^2.8.0"
+  }
+}
