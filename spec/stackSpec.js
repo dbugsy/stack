@@ -1,4 +1,4 @@
-const Stack = require("./src/stack");
+const Stack = require("../src/stack");
 
 describe("popping an object from the stack", () => {
   describe("when there is no object on the stack", () => {
