@@ -1,6 +1,16 @@
 class Stack {
+  constructor() {
+    this.elements = [];
+  }
   pop() {
-    throw new Error("Stack empty");
+    if(this.elements < 1) {
+      throw new Error("Stack empty");
+    }
+    return this.elements.pop();
+  }
+
+  push(object) {
+    this.elements.push(object);
   }
 }
 

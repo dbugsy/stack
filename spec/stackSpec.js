@@ -8,4 +8,22 @@ describe("popping an object from the stack", () => {
       expect(() => stack.pop() ).toThrow(new Error("Stack empty"));
     });
   });
+
+  describe("when there is an object on the stack", () => {
+    let stack;
+    let object;
+
+    beforeEach( () => {
+      object = new Object();
+      stack = new Stack();
+
+      stack.push(object);
+    });
+
+    it("pops the pushed object", () => {
+      expect(stack.pop()).toEqual(object);
+    });
+
+    
+  });
 });
