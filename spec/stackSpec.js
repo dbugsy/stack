@@ -24,6 +24,10 @@ describe("popping an object from the stack", () => {
       expect(stack.pop()).toEqual(object);
     });
 
-    
+    it("removes the last object from the stack", () => {
+      stack.pop();
+
+      expect( () => stack.pop() ).toThrow(new Error("Stack empty"));
+    });
   });
 });
